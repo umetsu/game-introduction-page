@@ -40,7 +40,7 @@ img {
 /* リストアイテム */
 
 .item {
-  padding: 2vw 0;
+  padding: 0 0 2vw;
 }
 
 .item_header {
@@ -78,6 +78,39 @@ img {
   border-width: 8px 0;
 }
 
+.movie {
+  padding: 2vw;
+}
+
+.movie_player {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.movie_player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.button {
+  background-color: #fcf6ef;
+  padding: 16px;
+  width: 100%;
+}
+
 /* Splatoon2 */
 
 #splatoon2 {
@@ -104,7 +137,7 @@ img {
   object-position: top;
 }
 
-.spla_content {
+.spla_mv {
   position: relative;
   padding: 2vw;
 }
@@ -176,7 +209,7 @@ img {
   object-position: 0 30%;
 }
 
-.mario_content {
+.mario_mv {
   position: relative;
 }
 
