@@ -172,8 +172,8 @@ img {
 
 .spla_contentLogo {
   position: absolute;
-  width: 55vw;
-  top: 55%;
+  width: 60vw;
+  top: 57%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -224,7 +224,7 @@ img {
 
 .mario_contentLogo {
   position: absolute;
-  width: 40vw;
+  width: 45vw;
   right: 0;
   bottom: 0;
 }
