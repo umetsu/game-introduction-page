@@ -146,6 +146,58 @@ img {
   margin: 0 auto;
 }
 
+/* マリオオデッセイ */
+
+#mario-odyssey {
+  background-color: #e60012;
+}
+
+#mario-odyssey .item_header {
+  background-color: #e60012;
+}
+
+.mario_headerImage1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 40%;
+}
+
+.mario_headerImage2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+.mario_content {
+  position: relative;
+}
+
+.mario_contentChara {
+  position: absolute;
+  width: 75vw;
+  top: 7%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.mario_contentLogo {
+  position: absolute;
+  width: 40vw;
+  right: 0;
+  bottom: 0;
+}
+
+/* アニメーション */
+
 .fadein {
   opacity: 0;
 }
