@@ -11,6 +11,30 @@ img {
   height: auto;
 }
 
+.mv {
+  position: relative;
+}
+
+.mv img {
+  height: 100vw;
+  object-fit: cover;
+  object-position: 30%;
+}
+
+.mv_textWrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.mv_text {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 1px #555, -2px 2px 1px #555, 2px -2px 1px #555,
+    -2px -2px 1px #555, 2px 0 1px #555, 0 2px 1px #555, -2px 0 1px #555,
+    0 -2px 1px #555;
+}
+
 .item {
   padding: 16px 0;
 }
