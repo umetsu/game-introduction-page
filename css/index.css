@@ -229,6 +229,47 @@ img {
   bottom: 0;
 }
 
+/* ゼルダ ブレスオブザワイルド */
+
+#botw {
+  background: url('/img/botw/nav_top_bg_pattern.jpg') repeat;
+}
+
+.botw_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 70%;
+}
+
+.botw_mv {
+  position: relative;
+  height: 120vw;
+}
+
+.botw_mv > img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 20%;
+}
+
+.botw_contentLead {
+  position: absolute;
+  width: 18vw;
+  left: 5%;
+  top: 10%;
+}
+
+.botw_contentLogo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /* アニメーション */
 
 .fadein {
