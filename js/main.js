@@ -1,11 +1,22 @@
-;(function () {
-  const screenOffset = window.innerHeight * 0.6
-  const elements = document.getElementsByClassName('anime')
-  for (const element of elements) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY + screenOffset > element.offsetTop) {
-        element.classList.add('is-animate')
+function scrollAnime(margin) {
+  const animElements = [...document.querySelectorAll('.anime')]
+  const options = {
+    root: null,
+    rootMargin: `-${margin}% 0px`,
+    threshold: 0,
+  }
+  const observer = new IntersectionObserver(handleIntersection, options)
+  animElements.forEach((item) => {
+    observer.observe(item)
+  })
+
+  function handleIntersection(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-animate')
       }
     })
   }
-})()
+}
+
+scrollAnime(20)
