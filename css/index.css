@@ -345,18 +345,7 @@ img {
 .botw_headerImage img {
   height: 100%;
   object-fit: cover;
-  object-position: 0 70%;
-}
-
-#botw .intro_mainBg img {
-  object-position: 0 20%;
-}
-
-.botw_lead {
-  position: absolute;
-  width: 18vw;
-  left: 5%;
-  top: 10%;
+  object-position: 0 15%;
 }
 
 .botw_logo {
@@ -364,4 +353,10 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.botw_logo_anim {
+  opacity: 0;
+  transform: translate(0, 30%);
+  transition-duration: 0.7s;
 }
