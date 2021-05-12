@@ -3,6 +3,10 @@ body {
     'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
     'MS PGothic', sans-serif;
   background: #fcf6ef;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 img {
@@ -41,6 +45,11 @@ img {
 
 .item {
   padding: 0 0 2vw;
+  overflow: hidden;
+}
+
+.item * {
+  box-sizing: border-box;
 }
 
 .item_header {
@@ -125,6 +134,11 @@ img {
   width: 100%;
 }
 
+.anime.is-animate {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
 /* Splatoon2 */
 
 #splatoon2 {
@@ -151,32 +165,88 @@ img {
   object-position: top;
 }
 
-.spla_charaLeft {
+.spla_leftCharacters {
   position: absolute;
-  left: 0;
+  left: -4vw;
   top: 0;
   width: 60vw;
 }
 
-.spla_charaLeft img {
+.spla_leftChara {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
 }
 
-.spla_charaRight {
+.spla_leftChara_anim1 {
+  opacity: 0;
+  transform: translate(-50%, -20%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+
+.spla_leftChara_anim2 {
+  opacity: 0;
+  transform: translate(-50%, -10%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.spla_leftChara_anim3 {
+  opacity: 0;
+  transform: translate(-50%, 0%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+}
+
+.spla_leftChara_anim4 {
+  opacity: 0;
+  transform: translate(-5%, 40%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s,
+    transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+}
+
+.spla_rightCharacters {
+  position: absolute;
+  right: -4vw;
+  top: 0;
+  width: 60vw;
+}
+
+.spla_rightChara {
   position: absolute;
   right: 0;
   top: 0;
-  width: 60vw;
+  width: 100%;
 }
 
-.spla_charaRight img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+.spla_rightChara_anim1 {
+  opacity: 0;
+  transform: translate(50%, -20%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+
+.spla_rightChara_anim2 {
+  opacity: 0;
+  transform: translate(50%, -10%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.spla_rightChara_anim3 {
+  opacity: 0;
+  transform: translate(50%, 6%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,
+    transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+}
+
+.spla_rightChara_anim4 {
+  opacity: 0;
+  transform: translate(50%, 20%);
+  transition: opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s,
+    transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
 }
 
 .spla_logoWrapper {
@@ -186,6 +256,13 @@ img {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.spla_logoWrapper_anim {
+  opacity: 0;
+  transform: scale(0.6);
+  transition-duration: 0.2s;
+  transition-delay: 0.5s;
 }
 
 /* マリオオデッセイ */
@@ -277,15 +354,4 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-/* アニメーション */
-
-.fadein {
-  opacity: 0;
-}
-
-.fadein.is-animate {
-  opacity: 1;
-  transition: all ease 0.65s;
 }

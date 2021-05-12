@@ -1,6 +1,6 @@
 ;(function () {
   const screenOffset = window.innerHeight * 0.6
-  const elements = document.getElementsByClassName('fadein')
+  const elements = document.getElementsByClassName('anime')
   for (const element of elements) {
     window.addEventListener('scroll', () => {
       if (window.scrollY + screenOffset > element.offsetTop) {
