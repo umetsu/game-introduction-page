@@ -21,4 +21,4 @@ function scrollAnime(margin) {
   }
 }
 
-scrollAnime(20)
+scrollAnime(35)

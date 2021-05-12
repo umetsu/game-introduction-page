@@ -21,11 +21,6 @@ img {
   width: 100%;
 }
 
-.anime.is-animate {
-  opacity: 1;
-  transform: translate(0%, 0%) scale(1, 1);
-}
-
 /* メインヴィジュアル */
 
 .mv {
@@ -261,6 +256,13 @@ img {
   transition-delay: 0.5s;
 }
 
+.intro_main.is-animate .spla_leftChara,
+.intro_main.is-animate .spla_rightChara,
+.intro_main.is-animate .spla_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
 /* マリオオデッセイ */
 
 #mario-odyssey {
@@ -328,6 +330,12 @@ img {
   transition-delay: 0.5s;
 }
 
+.intro_main.is-animate .mario_chara,
+.intro_main.is-animate .mario_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
 /* ゼルダ ブレスオブザワイルド */
 
 #botw {
@@ -359,6 +367,11 @@ img {
   opacity: 0;
   transform: translate(0, 30%);
   transition-duration: 0.7s;
+}
+
+.intro_main.is-animate .botw_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
 }
 
 /* 大神 */
@@ -413,4 +426,11 @@ img {
   transform: scale(0.5);
   transition-duration: 0.3s;
   transition-delay: 0.5s;
+}
+
+.intro_main.is-animate .ookami_chara1,
+.intro_main.is-animate .ookami_chara2,
+.intro_main.is-animate .ookami_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
 }
