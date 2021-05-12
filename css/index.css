@@ -98,7 +98,7 @@ img {
 .item_mvBgWrapper img {
   height: 100%;
   object-fit: cover;
-  object-position: 0 20%;
+  object-position: center;
 }
 
 .movie {
@@ -295,10 +295,6 @@ img {
   object-position: 0 30%;
 }
 
-.mario_mv {
-  position: relative;
-}
-
 .mario_charaWrapper {
   position: absolute;
   width: 90vw;
@@ -331,14 +327,7 @@ img {
   object-position: 0 70%;
 }
 
-.botw_mv {
-  position: relative;
-  height: 120vw;
-}
-
-.botw_mv > img {
-  height: 100%;
-  object-fit: cover;
+#botw .item_mvBgWrapper img {
   object-position: 0 20%;
 }
 
