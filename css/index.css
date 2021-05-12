@@ -15,6 +15,17 @@ img {
   height: auto;
 }
 
+.button {
+  background-color: #fcf6ef;
+  padding: 16px;
+  width: 100%;
+}
+
+.anime.is-animate {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
 /* メインヴィジュアル */
 
 .mv {
@@ -41,31 +52,31 @@ img {
     0 -2px 1px #555;
 }
 
-/* リストアイテム */
+/* ゲーム紹介のアイテム */
 
-.item {
+.intro {
   margin: 2vw;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
-.item * {
+.intro * {
   box-sizing: border-box;
 }
 
-.item_header {
+.intro_header {
   position: relative;
   height: 30vw;
 }
 
-.item_headerTitleWrapper {
+.intro_titleWrapper {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.item_headerTitle {
+.intro_title {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   font-style: italic;
@@ -74,33 +85,33 @@ img {
   margin: 0;
 }
 
-.item_mv {
+.intro_main {
   position: relative;
   height: 120vw;
 }
 
-.item_mvBgWrapper {
+.intro_mainBg {
   height: 100%;
 }
 
-.item_mvBgWrapper img {
+.intro_mainBg img {
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.movie {
+.intro_movie {
   padding: 2vw;
 }
 
-.movie_player {
+.intro_moviePlayer {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-.movie_player iframe {
+.intro_moviePlayer iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,23 +119,12 @@ img {
   height: 100%;
 }
 
-.link {
+.intro_link {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2vw;
-}
-
-.button {
-  background-color: #fcf6ef;
-  padding: 16px;
-  width: 100%;
-}
-
-.anime.is-animate {
-  opacity: 1;
-  transform: translate(0%, 0%) scale(1, 1);
 }
 
 /* Splatoon2 */
@@ -139,6 +139,10 @@ img {
   right: 0;
   width: 90%;
   height: 100%;
+}
+
+.spla_headerImage1 img {
+  height: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -148,6 +152,10 @@ img {
   top: 0;
   left: 0;
   width: 90%;
+  height: 100%;
+}
+
+.spla_headerImage2 img {
   height: 100%;
   object-fit: cover;
   object-position: top;
@@ -237,7 +245,7 @@ img {
     transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
 }
 
-.spla_logoWrapper {
+.spla_logo {
   position: absolute;
   width: 90vw;
   top: 50%;
@@ -246,7 +254,7 @@ img {
   margin: 0 auto;
 }
 
-.spla_logoWrapper_anim {
+.spla_logo_anim {
   opacity: 0;
   transform: scale(0.6);
   transition-duration: 0.2s;
@@ -259,7 +267,7 @@ img {
   background-color: #e60012;
 }
 
-#mario-odyssey .item_header {
+#mario-odyssey .intro_header {
   background-color: #e60012;
 }
 
@@ -268,6 +276,10 @@ img {
   top: 0;
   left: 0;
   width: 50%;
+  height: 100%;
+}
+
+.mario_headerImage1 img {
   height: 100%;
   object-fit: cover;
   object-position: 0 40%;
@@ -279,11 +291,15 @@ img {
   right: 0;
   width: 50%;
   height: 100%;
+}
+
+.mario_headerImage2 img {
+  height: 100%;
   object-fit: cover;
   object-position: 0 30%;
 }
 
-.mario_charaWrapper {
+.mario_chara {
   position: absolute;
   width: 90vw;
   top: 7%;
@@ -292,7 +308,7 @@ img {
   margin: 0 auto;
 }
 
-.mario_logoWrapper {
+.mario_logo {
   position: absolute;
   width: 55vw;
   right: 0;
@@ -311,22 +327,26 @@ img {
   left: 0;
   right: 0;
   height: 100%;
+}
+
+.botw_headerImage img {
+  height: 100%;
   object-fit: cover;
   object-position: 0 70%;
 }
 
-#botw .item_mvBgWrapper img {
+#botw .intro_mainBg img {
   object-position: 0 20%;
 }
 
-.botw_leadWrapper {
+.botw_lead {
   position: absolute;
   width: 18vw;
   left: 5%;
   top: 10%;
 }
 
-.botw_logoWrapper {
+.botw_logo {
   position: absolute;
   left: 0;
   right: 0;
