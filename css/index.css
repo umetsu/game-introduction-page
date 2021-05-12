@@ -360,3 +360,57 @@ img {
   transform: translate(0, 30%);
   transition-duration: 0.7s;
 }
+
+/* 大神 */
+
+#ookami {
+  background: url('/img/ookami/bg03.jpg') repeat;
+}
+
+.ookami_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.ookami_headerImage img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ookami_chara1 {
+  position: absolute;
+  width: 75%;
+  right: 0;
+  top: 0;
+}
+
+.ookami_chara2 {
+  position: absolute;
+  width: 30%;
+  right: 20%;
+  top: 45%;
+}
+
+.ookami_chara_anim {
+  opacity: 0;
+  transform: translate(40%);
+  transition-duration: 0.3s;
+}
+
+.ookami_logo {
+  position: absolute;
+  width: 50%;
+  left: 2%;
+  bottom: 2%;
+}
+
+.ookami_logo_anim {
+  opacity: 0;
+  transform: scale(0.5);
+  transition-duration: 0.3s;
+  transition-delay: 0.5s;
+}
