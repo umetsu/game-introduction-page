@@ -14,6 +14,8 @@ function scrollAnime(margin) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-animate')
+      } else {
+        entry.target.classList.remove('is-animate')
       }
     })
   }
