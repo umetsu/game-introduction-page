@@ -585,3 +585,59 @@ img {
   opacity: 1;
   transform: translate(0%, 0%) scale(1, 1);
 }
+
+/* Flowery */
+
+#flowery {
+  background-color: #689928;
+}
+
+.flowery_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.flowery_headerImage img {
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.flowery_chara {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  bottom: 0;
+}
+
+.flowery_chara_anim {
+  opacity: 0;
+  transform: translateY(20%);
+  transition-duration: 1.2s;
+  transition-delay: 0.5s;
+}
+
+.flowery_logo {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin: 0 auto;
+}
+
+.flowery_logo_anim {
+  opacity: 0;
+  transform: translate(-5%, 20%);
+  transition-duration: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.intro_main.is-animate .flowery_chara,
+.intro_main.is-animate .flowery_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
