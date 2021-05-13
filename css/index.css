@@ -83,6 +83,7 @@ img {
 .intro_main {
   position: relative;
   height: 120vw;
+  overflow: hidden;
 }
 
 .intro_mainBg {
@@ -431,6 +432,46 @@ img {
 .intro_main.is-animate .ookami_chara1,
 .intro_main.is-animate .ookami_chara2,
 .intro_main.is-animate .ookami_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
+/* サクナヒメ */
+
+#sakuna {
+  background: url('/img/sakuna/bg_red.png') repeat;
+}
+
+.sakuna_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.sakuna_headerImage img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.sakuna_logo {
+  position: absolute;
+  width: 60%;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+  margin: 0 auto;
+}
+
+.sakuna_logo_anim {
+  opacity: 0;
+  transform: scale(0.5);
+  transition-duration: 0.2s;
+  transition-delay: 0.3s;
+}
+
+.intro_main.is-animate .sakuna_logo {
   opacity: 1;
   transform: translate(0%, 0%) scale(1, 1);
 }
