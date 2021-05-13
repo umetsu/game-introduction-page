@@ -529,3 +529,59 @@ img {
   opacity: 1;
   transform: translate(0%, 0%) scale(1, 1);
 }
+
+/* 風ノ旅ビト */
+
+#journey {
+  background-color: #d09345;
+}
+
+.journey_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.journey_headerImage img {
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.journey_chara {
+  position: absolute;
+  width: 80%;
+  left: -10%;
+  bottom: 5%;
+}
+
+.journey_chara_anim {
+  opacity: 0;
+  transform: translateY(20%);
+  transition-duration: 1.2s;
+  transition-delay: 0.5s;
+}
+
+.journey_logo {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  top: 35%;
+  margin: 0 auto;
+}
+
+.journey_logo_anim {
+  opacity: 0;
+  transform: translateY(20%);
+  transition-duration: 2s;
+  transition-delay: 1.5s;
+}
+
+.intro_main.is-animate .journey_chara,
+.intro_main.is-animate .journey_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
