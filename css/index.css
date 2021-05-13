@@ -493,6 +493,7 @@ img {
 .wander_headerImage img {
   height: 100%;
   object-fit: cover;
+  object-position: 0 80%;
 }
 
 .wander_logo {
@@ -513,9 +514,9 @@ img {
 
 .wander_caption {
   position: absolute;
-  width: 70%;
+  width: 80%;
   right: 2%;
-  bottom: 5%;
+  bottom: 2%;
 }
 
 .wander_caption_anim {
