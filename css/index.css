@@ -61,7 +61,7 @@ img {
 
 .intro_header {
   position: relative;
-  height: 30vw;
+  height: 35vw;
 }
 
 .intro_titleWrapper {
@@ -82,7 +82,7 @@ img {
 
 .intro_main {
   position: relative;
-  height: 120vw;
+  height: 140vw;
   overflow: hidden;
 }
 
@@ -472,6 +472,60 @@ img {
 }
 
 .intro_main.is-animate .sakuna_logo {
+  opacity: 1;
+  transform: translate(0%, 0%) scale(1, 1);
+}
+
+/* ワンダ */
+
+#wander {
+  background: url('/img/wander/bg-white.jpg') repeat;
+}
+
+.wander_headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.wander_headerImage img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.wander_logo {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+}
+
+.wander_logo_anim {
+  opacity: 0;
+  transform: translateY(20%);
+  transition-duration: 0.7s;
+  transition-delay: 0.5s;
+}
+
+.wander_caption {
+  position: absolute;
+  width: 70%;
+  right: 2%;
+  bottom: 5%;
+}
+
+.wander_caption_anim {
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-delay: 0.7s;
+}
+
+.intro_main.is-animate .wander_caption,
+.intro_main.is-animate .wander_logo {
   opacity: 1;
   transform: translate(0%, 0%) scale(1, 1);
 }
