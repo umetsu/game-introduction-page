@@ -42,8 +42,8 @@ img {
 .mv_text {
   margin: 0;
   color: white;
-  text-shadow: 2px 2px 1px #555, -2px 2px 1px #555, 2px -2px 1px #555,
-    -2px -2px 1px #555, 2px 0 1px #555, 0 2px 1px #555, -2px 0 1px #555,
+  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555,
+    -1px -1px 1px #555, 1px 0 1px #555, 0 1px 1px #555, -1px 0 1px #555,
     0 -2px 1px #555;
 }
 
@@ -160,7 +160,7 @@ img {
 .spla_leftCharacters {
   position: absolute;
   left: -4vw;
-  top: 0;
+  top: 10%;
   width: 60vw;
 }
 
@@ -202,7 +202,7 @@ img {
 .spla_rightCharacters {
   position: absolute;
   right: -4vw;
-  top: 0;
+  top: 10%;
   width: 60vw;
 }
 
@@ -243,8 +243,7 @@ img {
 
 .spla_logo {
   position: absolute;
-  width: 90vw;
-  top: 50%;
+  top: 55%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -304,8 +303,7 @@ img {
 
 .mario_chara {
   position: absolute;
-  width: 90vw;
-  top: 7%;
+  top: 15%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -367,7 +365,8 @@ img {
 .botw_logo_anim {
   opacity: 0;
   transform: translate(0, 30%);
-  transition-duration: 0.7s;
+  transition-duration: 1.2s;
+  transition-delay: 0.8s;
 }
 
 .intro_main.is-animate .botw_logo {
@@ -455,9 +454,23 @@ img {
   object-fit: cover;
 }
 
+.sakuna_copy {
+  position: absolute;
+  width: 17%;
+  right: 4%;
+  top: 6%;
+}
+
+.sakuna_copy_anim {
+  opacity: 0;
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+  transition-delay: 0.3s;
+}
+
 .sakuna_logo {
   position: absolute;
-  width: 60%;
+  width: 70%;
   left: 0;
   right: 0;
   bottom: 2%;
@@ -468,9 +481,10 @@ img {
   opacity: 0;
   transform: scale(0.5);
   transition-duration: 0.2s;
-  transition-delay: 0.3s;
+  transition-delay: 0.8s;
 }
 
+.intro_main.is-animate .sakuna_copy,
 .intro_main.is-animate .sakuna_logo {
   opacity: 1;
   transform: translate(0%, 0%) scale(1, 1);
@@ -508,21 +522,21 @@ img {
 .wander_logo_anim {
   opacity: 0;
   transform: translateY(20%);
-  transition-duration: 0.7s;
+  transition-duration: 1.2s;
   transition-delay: 0.5s;
 }
 
 .wander_caption {
   position: absolute;
   width: 80%;
-  right: 2%;
-  bottom: 2%;
+  right: 0;
+  bottom: 5%;
 }
 
 .wander_caption_anim {
   opacity: 0;
-  transition-duration: 0.4s;
-  transition-delay: 0.7s;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .intro_main.is-animate .wander_caption,
