@@ -1,6 +1,8 @@
 # ゲーム紹介サイト
 
-https://game-introduction-page.vercel.app/
+モバイルブラウザ向けのゲーム紹介サイトです。
+
+- https://game-introduction-page.vercel.app/
 
 ## インストールと実行
 以下のコマンドを実行します
